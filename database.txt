@@ -1,0 +1,65 @@
+apartments
+id
+photo -> many inserted
+size
+room
+bathroom
+aircon: Avaible
+kitchen: Available
+parking: Available
+price
+status
+created_at
+updated_at
+
+users
+name
+email
+username
+password
+type
+
+tenants
+user_id -> foreign to users
+name
+email
+contact
+unit -> assigned
+location
+status
+date_in
+created_at
+updated_at
+
+
+maintenance
+appartment_id -> foreign to appartments
+user_id -> foreign to users
+location
+maintenance_category
+description
+
+payment
+reference_number
+tenant_id -> foreign to tenants
+amount
+balance
+amount
+invoice
+date_paid
+
+message
+user_id -> foreign to users
+messages
+date
+
+systems_settings
+main_header
+main_paragraph
+main_banner
+second_header
+second_paragraph
+second_banner
+third_header
+third_paragraph
+third_banner
