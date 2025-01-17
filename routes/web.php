@@ -10,6 +10,10 @@ use App\Http\Controllers\admin\SystemController;
 use App\Http\Controllers\admin\TenantsController;
 use App\Http\Controllers\auth\AuthController;
 use App\Http\Controllers\tenants\HomeController;
+use App\Http\Controllers\tenants\ProfileController;
+use App\Http\Controllers\tenants\TenantsMaintenanceController;
+use App\Http\Controllers\tenants\TenantsMessageController;
+use App\Http\Controllers\tenants\TenantsPaymentController;
 use Illuminate\Support\Facades\Route;
 
 // TENANTS PAGE
@@ -21,12 +25,9 @@ Route::get('/apartments', [HomeController::class, 'ApartmentsPage'])->name('apar
 // ADMIN PAGE
 Route::get('/admin/tenants_list', [TenantsController::class,'TenantsPage'])->name('admin.tenants.list');
 
-
 Route::get('/admin/maintenance_list', [MaintenanceController::class,'MaintenancePage'])->name('admin.maintenance.list');
 
-
 Route::get('/admin/monthly_report_list', [ReportsController::class,'MonthlyReportsPage'])->name('admin.monthly_reports.list');
-
 
 Route::get('/admin/payment_list', [PaymentController::class,'PaymentPage'])->name('admin.payment.list');
 
@@ -34,10 +35,20 @@ Route::get('/admin/message_list', [MessageController::class,'MessagePage'])->nam
 
 Route::get('/admin/account_list', [AccountsController::class,'AccountPage'])->name('admin.account.list');
 
-
 Route::get('/admin/appartment_list', [AppartmentController::class,'AppartmentPage'])->name('admin.appartment.list');
 
 Route::get('/admin/system_settings', [SystemController::class,'SystemPage'])->name('admin.system.settings');
+
+
+// TENANTS PAGE
+Route::get('/tenants/profile', [ProfileController::class,'ProfilePage'])->name('tenants.profile.page');
+
+
+Route::get('/tenants/maintenance', [TenantsMaintenanceController::class,'TenantsMaintenancePage'])->name('tenants.maintenance.page');
+
+Route::get('/tenants/payments', [TenantsPaymentController::class,'TenantsPaymentPage'])->name('tenants.payments.page');
+
+Route::get('/tenants/message', [TenantsMessageController::class,'TenantsMessagePage'])->name('tenants.message.page');
 
 // AUTH PAGE
 Route::get('/tenants/login', [AuthController::class, 'TenantsLoginPage'])->name('tenants_login_page');
