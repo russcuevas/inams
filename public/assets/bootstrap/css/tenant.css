@@ -1,0 +1,12 @@
+.container6{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #013237;
+}
+.col2{
+    width: 1px;
+    height: 33rem;
+    border: 2px;
+    background-color:whitesmoke!important;
+}

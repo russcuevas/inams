@@ -1,0 +1,363 @@
+.layout {
+    display: flex; /* Enables flexbox for layout */
+    height: 100vh; /* Full viewport height */
+  }
+  .main {
+    flex: 1; /* Fills the remaining space beside the sidebar */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    background-color: #ffffff; /* Example background color */
+  }
+  .container3 {
+    text-align: end; /* Centers text and content within this div */
+    max-width: 600px; /* Optional: restricts the width for better design */
+    width: 100%; /* Ensures responsiveness */
+  }
+  
+  .admin-header {
+    display: center; /* Aligns image and text horizontally */
+    align-items: center; /* Vertically aligns the image with the text */
+    font-size: 50px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin: 0; /* Removes default margin */
+    margin-left: 250px!important;
+    color: #013237;
+  }
+  
+  img {
+    margin-right: 10px; /* Adds spacing between the image and text */
+  }
+    .img-crop{
+      width:100%;
+      height: 100px;
+      object-fit:contain;
+      object-position:center!important;
+      margin-left: 5%;
+    }
+    .outmenu{
+      margin-left: 20%;
+      text-decoration: none;
+      color: white;
+    }
+    .name{
+      margin-left: 5%;
+    }
+    .small-logo{
+      width: 40px!important;
+      height:100%;
+      object-fit: contain;
+      object-position: left;
+      margin-right: 10px;
+    
+    }
+  .admin-sidebar
+    {
+    
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+     
+    }
+   
+  .menu-list
+  {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    align-items: center; 
+    display: flex;
+  }
+  li a.menu-list:hover
+  {
+    color: #f9bc60;
+  }
+  .small-logo{
+    width: 60px; 
+    height: 60px; 
+    margin-right: 8px;
+    object-fit: contain; 
+    margin-left: 8px;
+  }
+  
+  /* Search Button */
+  
+  
+  
+  /* End Search Bar */
+  
+  
+  /* Card Container */
+  .card
+  {
+    margin-left: -50px;
+  }
+  .card-header
+  {
+    text-decoration: none;
+    color: #013237;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .card-body .card-title
+  {
+    font-size: 100px;
+    color: #013237;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    
+  }
+  /* End Card Container */
+  
+  /* Start Table */
+  
+  .table{
+    width: 155%;
+  }
+  .table_header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c8a84;
+    margin-top: 20px;
+    margin-left: -50px;
+  }
+  .table_header h3{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    
+  }
+  
+  .search_admin
+  {
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1.5px solid #013237;
+    border-radius: 10px;
+    color: #013237;
+  }
+  .table_section
+  {
+    height: 650px;
+    overflow: auto;
+    margin-left: -50px;
+  
+  }
+  
+  table{
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+  }
+  thead th{
+    margin-left: -55px;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    color: #013237;
+    font-size: 15px;
+  }
+  th, td{
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 20px;
+  word-break: break-all;
+  text-align: center;
+  }
+  
+  tr, td{
+    color: #013237;
+    font-size: large;
+    font-weight: 400;
+  }
+  
+  tr:hover td{
+    color: #013237;
+    cursor: pointer;
+    background-color: #f9bc60;
+  
+  }
+  .admin_but{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    color: #eff0f3;
+  }
+  
+  ::placeholder
+  {
+    color: #013237;
+  }
+  /* End Table */
+  /* Add Acc Button */
+  .add_acc_btn
+  {
+    justify-content: end;
+  }
+  .add_acc_btn button{
+    border: none;
+    font-size: large;
+    color: #013237;
+    background: #f9bc60;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+  
+  
+  }
+  /* Form Panel */
+  
+  .container-form
+  {
+    margin-top: 20px;
+    margin-left: -50px;
+    max-width: 700px;
+    width: 70%;
+    background: #1c8a84;
+    padding: 25px 30px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  
+  .container-form .title
+  {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+  }
+  
+  .container-form form .apartment-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  .apartment-details .input-box input
+  {
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+  
+  }
+  
+  .apartment-details .input-box .details{
+    
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: white;
+    margin: 10px;
+  
+  }
+  form .button
+  {
+    height: 45px;
+    margin: 45px 0;
+  }
+  form .button input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: large;
+    color: #013237;
+    background: #f9bc60;
+    border-radius: 10px;
+  }
+  form .cancel_btn
+  {
+    height: 45px;
+    margin: 45px 0;
+  }
+  form .cancel_btn input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: large;
+    color: #013237;
+    background: #e16162;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* End Panel */
+  
+  /* Start System Settings */
+  
+  .container-form-settings
+  {
+    margin-top: 20px;
+    margin-left: -50px;
+    max-width: 970px;
+    width: 500%;
+    background: #1c8a84;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  .container-form-settings form .details-settings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  .system_settings .input-box-settings input
+  {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 905;
+  }
+  .system_settings .input-box-settings .details-settings
+  {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: white;
+    margin: 5px;
+  }
+  .system_settings .input-box-settings .details-settings input
+  {
+    margin: 5px;
+  }
+  .save_btn_settings
+  {
+    height: 45px;
+    margin: 45px 0;
+  }
+  .save_btn_settings input
+  {
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-size: large;
+    color: #013237;
+    background: #f9bc60;
+    border-radius: 10px;
+  }
+  .cancel_btn_settings
+  {
+    height: 45px;
+    margin: 45px 0;
+  }
+  .cancel_btn_settings input
+  {
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-size: large;
+    color: #013237;
+    background: #e16162;
+    border-radius: 10px;
+  }
+  /* End System Settings */
